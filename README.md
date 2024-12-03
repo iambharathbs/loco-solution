@@ -1,12 +1,5 @@
 # Multi stage docker build
 
-Key Points
-
-**Optimization:** Multi-stage builds for a lightweight production image.
-**Scalability:** Configured HPA with CPU-based scaling to handle varying loads.
-**Kubernetes Proficiency:** Defined deployment, service, and scaling policies with YAML files.
-**Local Testing:** Used Minikube to replicate a production-like environment.
-
 Python code creates simple web application that prints "Hello World"
 
 **Build the docker image using the below command, **
