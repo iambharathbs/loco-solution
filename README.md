@@ -1,6 +1,8 @@
 # Multi stage docker build
 
-Python code creates simple web application that prints "Hello World"
+**Python program "app.py" creates simple web application that prints "Hello World"**
+
+Follow the below mentioned steps to build and deploy this applicaion on K8 cluster
 
 1. Build the docker image using the below command,
 
