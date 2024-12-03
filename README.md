@@ -2,31 +2,35 @@
 
 Python code creates simple web application that prints "Hello World"
 
-**Build the docker image using the below command, **
+1. Build the docker image using the below command,
 
-_docker build -t iambharathbs/python-docker-app:latest . _
+    docker build -t iambharathbs/python-docker-app:latest . 
 
-**Push to the docker registry using below command**
+2. Push to the docker registry using below command
 
-_docker push iambharathbs/python-docker-app:latest_
+    docker push iambharathbs/python-docker-app:latest
 
-Start minikube on the local computer using the below command, 
+3. Start minikube on the local computer using the below command, 
 
-_minikube start _
+    minikube start
 
-Apply yaml files 
-kubectl apply *.yaml 
+4. Apply yaml files 
 
-Check the status of deployment 
-kubectl get deployment
+    kubectl apply *.yaml 
 
-Using kubectl port-forward to expose the service to a local port
-_kubectl port-forward svc/python-docker-app-service 8080:80_
+5. Check the status of deployment and service, 
 
-Access application using the below URL 
-_http://localhost:8080_
+    kubectl get deployment
+    kubectl get svc
 
-Run the program generate_traffic.py to generate traffic
+7. Using kubectl port-forward to expose the service to a local port
+
+    **kubectl port-forward svc/python-docker-app-service 8080:80**
+
+8. Access application using the below URL 
+    http://localhost:8080
+
+9. Run the program **generate_traffic.py** to generate traffic
 
 
 
